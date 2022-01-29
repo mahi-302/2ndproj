@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-2"
 }
-resource "aws_instance" "2ndproj" {
+resource "aws_instance" "proj2" {
   depends_on = [aws_db_instance.default]
   ami           = "ami-0fb653ca2d3203ac1"
   instance_type = "t2.micro"
