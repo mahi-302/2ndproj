@@ -12,7 +12,7 @@ sudo apt install net-tools
 sudo /opt/lampp/lampp start
 sudo rm -rf /opt/lampp/htdocs/*
 sudo chmod 777 /opt/lampp/htdocs
-sudo git clone https://github.com/Ramana4u/abcd.git
+sudo git clone https://github.com/mahi-302/2ndproj.git
 sudo cp -r 2ndproj/Curfew e-Pass Management System Project/cpms/* /opt/lampp/htdocs
 sudo chmod 777 /opt/lampp/htdocs/includes/dbconnection.php
 sudo sed -i.bak 's/localhost/${endpoint}/g' /opt/lampp/htdocs/includes/dbconnection.php
@@ -37,5 +37,5 @@ sudo apt install mysql-client-core-8.0
 mysql -h ${endpoint} -u admin -p
 mahesh8842
 use cpms
-source /abcd/sourcecode/SQL File/cpms.sql
+source /2ndproj/Curfew e-Pass Management System Project/SQL File/cpms.sql
 
