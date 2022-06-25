@@ -8,7 +8,6 @@ resource "aws_instance" "proj2" {
   subnet_id   = "subnet-0fec44469e446977c"
   key_name = "awsall"
   user_data = templatefile("${path.module}/userdata.tftpl", {endpoint = aws_db_instance.default.endpoint,password = aws_db_instance.default.password})
-  iam_instance_profile = "ec2_all"
   security_groups = ["sg-08625c34c68a22785"]
   tags = {
     Name = "cpms"
